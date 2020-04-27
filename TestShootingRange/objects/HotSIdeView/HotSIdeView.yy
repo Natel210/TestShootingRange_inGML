@@ -2,7 +2,7 @@
     "id": "cd3e6dbd-f5fb-4f22-a9aa-76e6b2f6844f",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "HotSIdeView",
+    "name": "HotSideView",
     "eventList": [
         {
             "id": "0530348d-6f36-46f7-8348-c027a57ecd80",
@@ -12,6 +12,16 @@
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
+            "m_owner": "cd3e6dbd-f5fb-4f22-a9aa-76e6b2f6844f"
+        },
+        {
+            "id": "7487e707-2c6b-4e16-aed4-edf88fc80816",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
             "m_owner": "cd3e6dbd-f5fb-4f22-a9aa-76e6b2f6844f"
         }
     ],

@@ -11,7 +11,8 @@
         "9054eceb-179d-4604-a07a-d2fc565f65ec",
         "a45d4667-d658-46d4-9617-c65b4dbfd08b",
         "f57ee350-f5c0-4b4c-8e5e-86d14fa01ee7",
-        "78230ef3-255a-49cc-a544-3dadab32855f"
+        "78230ef3-255a-49cc-a544-3dadab32855f",
+        "4f403af9-b574-44d1-99d9-13b83de1d0ea"
     ],
     "filterType": "GMSprite",
     "folderName": "HotPanel",
