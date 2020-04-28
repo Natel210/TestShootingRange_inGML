@@ -9,29 +9,22 @@ if (true == Check_ActiveChange)
 {
 	var test = HidePanel_Width;
 	
-	// 활성 동작 
-	if (Is_ActiveState) 
+	//var temp_len = ds_map_size(ObjectPartMap);
+
+	for (var tempkey = ds_map_find_first(ObjectPartMap); !is_undefined(tempkey) ; tempkey = ds_map_find_next(ObjectPartMap,tempkey)) 
 	{
-		with (Id_MainSideView) 
+		// 활성 동작 
+		if (Is_ActiveState) 
 		{
-			x -= test;
+			with (ObjectPartMap[? tempkey]) { x -= test; }
 		}
-		with (Id_HotSideView) 
+		else 
 		{
-			x -= test;
+			with (ObjectPartMap[? tempkey]) { x += test; }
 		}
 	}
-	else 
-	{
-		with (Id_MainSideView) 
-		{
-			x += test;
-		}
-		with (Id_HotSideView) 
-		{
-			x += test;
-		}
-	}
+	
+
 	// 후처리 
 	Is_ActiveState = !Is_ActiveState;
     Check_ActiveChange = false;

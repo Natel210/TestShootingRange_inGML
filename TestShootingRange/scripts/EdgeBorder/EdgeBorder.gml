@@ -13,18 +13,26 @@ switch (argument_count) {
 		break;
 	case 4:
 	{
-		with (argument0) 
+		if (!object_exists(argument0))
 		{
-			draw_sprite_ext (argument1 , 0, x, y,Box_Scale_X,Box_Scale_Y,0,c_white,1);
-			draw_sprite_ext (argument1 , 1, x, y,Box_Scale_X,Box_Scale_Y,0,c_white,1);
-			draw_sprite_ext (argument1 , 2, x, y,Box_Scale_X,Box_Scale_Y,0,c_white,1);
-			draw_sprite_ext (argument1 , 3, x, y,Box_Scale_X,Box_Scale_Y,0,c_white,1);
-			draw_sprite_ext (argument1 , 4, x, y,Box_Scale_X,Box_Scale_Y,0,c_white,1);
-			draw_sprite_ext (argument1 , 5, x, y,Box_Scale_X,Box_Scale_Y,0,c_white,1);
-			
+			with (argument0) 
+			{
+				//var h = sprite_height;
+				//var w = sprite_width;
+				//var xs = image_xscale;
+				//var ys = image_yscale;
+				var offset_helfX = sprite_get_xoffset(sprite_index) * image_xscale;
+				var offset_helfY = sprite_get_yoffset(sprite_index) * image_yscale;
+				
+				//이거 나중에 확인해서 갈라야할 듯 ... 9방 
+				draw_sprite_ext (argument1 , 0, x - offset_helfX, y - offset_helfY, Box_Scale_X,Box_Scale_Y,0,c_white,1);
+				draw_sprite_ext (argument1 , 1, x - offset_helfX, y - offset_helfY, Box_Scale_X,Box_Scale_Y,0,c_white,1);
+				draw_sprite_ext (argument1 , 2, x - offset_helfX, y - offset_helfY, Box_Scale_X,Box_Scale_Y,0,c_white,1);
+				draw_sprite_ext (argument1 , 3, x - offset_helfX, y - offset_helfY, Box_Scale_X,Box_Scale_Y,0,c_white,1);
+				draw_sprite_ext (argument1 , 4, x - offset_helfX, y - offset_helfY, Box_Scale_X,Box_Scale_Y,0,c_white,1);
+				draw_sprite_ext (argument1 , 5, x - offset_helfX, y - offset_helfY, Box_Scale_X,Box_Scale_Y,0,c_white,1);
+			}
 		}
-		
-		
 	}
 		break;
     default:

@@ -7,6 +7,9 @@ var StartPanel_X = Base_Instance_Pointer_X + x;
 var MainSidePanel_Width = sprite_get_width(Main_BG);
 var HotSidePanel_Width = sprite_get_width(Hot_BG);
 
+var Id_MainSideView;
+var Id_HotSideView;
+
 //인스턴스 설정에서 Is_leftSide를 설정하여 사용
 if (true == Is_leftSide) 
 {
@@ -22,3 +25,7 @@ else
 	Id_HotSideView = instance_create_depth(StartPanel_X - ( MainSidePanel_Width + HotSidePanel_Width ) , y + 0, 0, HotSideView);	
 	HidePanel_Width = MainSidePanel_Width * -1.0;
 }
+
+ObjectPartMap = ds_map_create();
+ds_map_add(ObjectPartMap,"HotSideViewPenal",Id_HotSideView);
+ds_map_add(ObjectPartMap,"MainSideViewPenal",Id_MainSideView);

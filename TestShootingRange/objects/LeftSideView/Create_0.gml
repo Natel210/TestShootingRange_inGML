@@ -27,14 +27,22 @@ event_inherited();
 ////////////////////////////////////////////////////////////
 
 //
+
+
+
 var Last_y = 0;
 
+Id_ButtonTest = instance_create_depth(x +200, y + 0, -1, LShift);
 
-Id_ButtonTest = instance_create_depth(x +200, y + 0, -1, Button);
+var id_LeftSideView = id;
+
 with (Id_ButtonTest) 
 {
-	y = Last_y + 10;
-	x = 384 + 16;
-	//Box_Scale_X = 0.5;
-	//Box_Scale_Y = 0.5;
+	Last_y += 30;
+	y = Last_y;
+	x = 384 + 36;
+	ViewMain = id_LeftSideView;
 }
+ds_map_add(ObjectPartMap,"LShiftButton",Id_ButtonTest);
+
+

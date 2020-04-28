@@ -15,26 +15,6 @@
             "m_owner": "f87febf9-3283-4c1e-9a85-d92926d01907"
         },
         {
-            "id": "5223598c-b82d-4924-843f-00ecf1c3866c",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 8,
-            "m_owner": "f87febf9-3283-4c1e-9a85-d92926d01907"
-        },
-        {
-            "id": "7a345917-d6d3-4085-aa80-cb7f52d87278",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "f87febf9-3283-4c1e-9a85-d92926d01907"
-        },
-        {
             "id": "ce958fed-1c0a-4c0c-98b8-5119e02b59ac",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -45,13 +25,13 @@
             "m_owner": "f87febf9-3283-4c1e-9a85-d92926d01907"
         },
         {
-            "id": "082787f2-e884-4b6b-92d3-a238528b9797",
+            "id": "953a84b6-c166-4cd8-8d8c-38c4a21d42e0",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 13,
-            "eventtype": 9,
+            "enumb": 0,
+            "eventtype": 8,
             "m_owner": "f87febf9-3283-4c1e-9a85-d92926d01907"
         }
     ],
@@ -127,34 +107,6 @@
             "value": "0",
             "varName": "HidePanel_Width",
             "varType": 0
-        },
-        {
-            "id": "cf8610b9-6889-4d65-a7b5-00294dc6872a",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "Id_HotSideView",
-            "varType": 5
-        },
-        {
-            "id": "fe712272-028d-48c1-b862-0750798f497a",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "Id_MainSideView",
-            "varType": 5
         }
     ],
     "solid": false,

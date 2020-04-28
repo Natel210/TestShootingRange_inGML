@@ -15,16 +15,6 @@
             "m_owner": "5917ef3d-6dcf-4408-849a-054290d9f033"
         },
         {
-            "id": "1afedbfd-1dc8-4a09-8533-9f836210cddd",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 10,
-            "eventtype": 7,
-            "m_owner": "5917ef3d-6dcf-4408-849a-054290d9f033"
-        },
-        {
             "id": "deef84d5-bd01-4867-bb01-feb7e7a3f5d9",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -32,6 +22,26 @@
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 8,
+            "m_owner": "5917ef3d-6dcf-4408-849a-054290d9f033"
+        },
+        {
+            "id": "3e1fa57c-20e7-45f2-9b83-87dbdfa46c74",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "5917ef3d-6dcf-4408-849a-054290d9f033"
+        },
+        {
+            "id": "5fd18478-3e00-4f21-a70e-f7ef3876eae5",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 10,
+            "eventtype": 7,
             "m_owner": "5917ef3d-6dcf-4408-849a-054290d9f033"
         }
     ],
@@ -104,7 +114,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
+            "value": "-1",
             "varName": "ButtonSprite",
             "varType": 5
         },
@@ -118,12 +128,40 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
+            "value": "-1",
             "varName": "ButtonPushSprite",
             "varType": 5
+        },
+        {
+            "id": "f2a012da-35da-42f9-aaf0-47e437121c2b",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "is_Push",
+            "varType": 3
+        },
+        {
+            "id": "8a5f969c-1c0c-44b6-b8c1-685c85a2d1c4",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "-1",
+            "varName": "ViewMain",
+            "varType": 0
         }
     ],
     "solid": false,
-    "spriteId": "9c286d04-50d9-480c-956d-ff379b5ed96f",
+    "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": true
 }
