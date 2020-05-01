@@ -6,8 +6,8 @@
 ButtonSprite = ButtonBase;
 ButtonPushSprite = ButtonPush;
 ButtonText = " << ";
-Box_Scale_X = 0.7;
-Box_Scale_Y = 0.5;
+Box_Scale_X = 3.0;
+Box_Scale_Y = 1.5;
 
 
 // Inherit the parent event

@@ -19,4 +19,8 @@ draw_text_color(x, y, ButtonText, c_black, c_black, c_black, c_black, 1);
 draw_set_valign(fa_top);
 draw_set_halign(fa_left);
 
-script_execute(EdgeBorder,id,HotBorder, 64, 64);
+if (true == is_Edge) 
+{
+	script_execute(EdgeBorder,id,HotBorder, 64, 64);
+}
+

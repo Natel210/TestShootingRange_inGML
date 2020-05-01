@@ -9,19 +9,24 @@ if (-1 == ViewMain)
 }
 else
 {
-	var tempButtonText; 
-	with (ViewMain) 
+	if (!object_exists(ViewMain))
 	{
-		Check_ActiveChange = true;
-	    event_user(0);
-		if(true == Is_ActiveState)
+		var tempButtonText; 
+		with (ViewMain) 
 		{
-			tempButtonText = " << ";
+			Check_ActiveChange = true;
+		    event_user(0);
+			if(true == Is_ActiveState)
+			{
+				tempButtonText = " << ";
+			}
+			else
+			{
+				tempButtonText = " >> ";
+			}
 		}
-		else
-		{
-			tempButtonText = " >> ";
-		}
+		ButtonText = tempButtonText;
 	}
-	ButtonText = tempButtonText;
+	
+
 }

@@ -21,8 +21,8 @@ switch (argument_count) {
 				//var w = sprite_width;
 				//var xs = image_xscale;
 				//var ys = image_yscale;
-				var offset_helfX = sprite_get_xoffset(sprite_index) * image_xscale;
-				var offset_helfY = sprite_get_yoffset(sprite_index) * image_yscale;
+				var offset_helfX = sprite_get_xoffset(sprite_index) * Box_Scale_X;
+				var offset_helfY = sprite_get_yoffset(sprite_index) * Box_Scale_Y;
 				
 				//이거 나중에 확인해서 갈라야할 듯 ... 9방 
 				draw_sprite_ext (argument1 , 0, x - offset_helfX, y - offset_helfY, Box_Scale_X,Box_Scale_Y,0,c_white,1);

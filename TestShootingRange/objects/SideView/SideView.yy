@@ -25,13 +25,23 @@
             "m_owner": "f87febf9-3283-4c1e-9a85-d92926d01907"
         },
         {
-            "id": "953a84b6-c166-4cd8-8d8c-38c4a21d42e0",
+            "id": "679ff5bd-0a5e-47d2-b4a8-52efcbe1e1ac",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 8,
+            "m_owner": "f87febf9-3283-4c1e-9a85-d92926d01907"
+        },
+        {
+            "id": "7158afe9-99f9-4823-b3db-00724eeb0104",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 1,
             "m_owner": "f87febf9-3283-4c1e-9a85-d92926d01907"
         }
     ],
@@ -107,9 +117,37 @@
             "value": "0",
             "varName": "HidePanel_Width",
             "varType": 0
+        },
+        {
+            "id": "31df82fd-7c44-4484-be68-ebf0d6ded471",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "MainSideView",
+            "varName": "Main_BG",
+            "varType": 5
+        },
+        {
+            "id": "1224bb1f-0cdc-4246-81f3-0389d8a317f9",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "HotSideView",
+            "varName": "Hot_BG",
+            "varType": 5
         }
     ],
     "solid": false,
-    "spriteId": "00000000-0000-0000-0000-000000000000",
+    "spriteId": "9c286d04-50d9-480c-956d-ff379b5ed96f",
     "visible": true
 }

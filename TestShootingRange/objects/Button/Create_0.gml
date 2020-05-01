@@ -22,22 +22,32 @@
 	// 박스의 X크기			:	Box_Scale_X
 	// 박스의 Y크기			:	Box_Scale_Y
 
-
-image_xscale= Box_Scale_X;
-image_yscale= Box_Scale_Y;
-
-sprite_index = ButtonSprite;
-
-// 없는 경우에는 강제 초기값 설정
-if(-1 == sprite_index)
+if (-1 == ButtonSprite) 
 {
-	show_message_async(object_get_name(object_index)+
-	"(" + string(id)+") : isn't valid button, don't create button."+
-	"\n							- default Setting -		");
-	ButtonText = "TEST TEXT";
-	ButtonSprite = ButtonBase;
-	ButtonPushSprite = ButtonPush;
+	//더미 인 경우 
+	ButtonSprite = sprite_index;
+	ButtonPushSprite = sprite_index;
+	Box_Scale_X = image_xscale;
+	Box_Scale_Y = image_yscale;
+}
+else
+{
+	image_xscale = Box_Scale_X;
+	image_yscale = Box_Scale_Y;
 	sprite_index = ButtonSprite;
 }
+
+
+//		// 없는 경우에는 강제 초기값 설정
+//		if(-1 == sprite_index)
+//		{
+//			show_message_async(object_get_name(object_index)+
+//			"(" + string(id)+") : isn't valid button, don't create button."+
+//			"\n							- default Setting -		");
+//			ButtonText = "TEST TEXT";
+//			ButtonSprite = ButtonBase;
+//			ButtonPushSprite = ButtonPush;
+//			sprite_index = ButtonSprite;
+//		}
 
 
