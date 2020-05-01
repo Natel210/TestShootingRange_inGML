@@ -8,8 +8,8 @@ if (!object_exists(argument0)) { return false; }
 
 
 
-if (){ return true; }
-else { return false; }
+//if (){ return true; }
+//else { return false; }
 
 
 return true;

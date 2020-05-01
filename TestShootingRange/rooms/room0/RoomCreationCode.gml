@@ -1,5 +1,5 @@
-//var PreviousViewID = layer_get_id("PreviousView");
-//layer_destroy(PreviousViewID);
+var PreviousViewID = layer_get_id("PreviousView");
+layer_destroy(PreviousViewID);
 var TestViewID = layer_get_id("TestInstances");
 layer_destroy(TestViewID);
 
