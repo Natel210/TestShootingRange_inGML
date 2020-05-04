@@ -5,20 +5,11 @@
 
 if (mouse_check_button(mb_left)) 
 {
-	if (position_meeting(mouse_x,mouse_y, id)) 
-	{
-		m_bPush  = true;
-	}
-	else
-	{
-		m_bPush  = false;
-	}
+	if (position_meeting(mouse_x,mouse_y, id)) { m_bPush  = true; }
+	else { m_bPush  = false; }
 }
 else if (mouse_check_button_released(mb_left))
 {
-	if (position_meeting(mouse_x,mouse_y, id) && m_bPush == true) 
-	{
-		event_user(0);
-	}
+	if (position_meeting(mouse_x,mouse_y, id) && m_bPush == true) { event_user(0); }
 	m_bPush  = false;
 }

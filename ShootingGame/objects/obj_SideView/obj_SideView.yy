@@ -4,18 +4,60 @@
     "mvc": "1.0",
     "name": "obj_SideView",
     "eventList": [
-        
+        {
+            "id": "db44327e-cc4a-4c18-b4a1-1f32b4b0419f",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "87ecf315-a424-4b41-842e-41ef632b2eaa"
+        },
+        {
+            "id": "032cc464-0c3f-4070-90d2-d36fb3484458",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "87ecf315-a424-4b41-842e-41ef632b2eaa"
+        },
+        {
+            "id": "cd657da6-3d64-41e9-be2b-676cfc705fcf",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 1,
+            "m_owner": "87ecf315-a424-4b41-842e-41ef632b2eaa"
+        },
+        {
+            "id": "74a2ee2f-f9c1-4a19-9cf9-e44532130869",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 12,
+            "m_owner": "87ecf315-a424-4b41-842e-41ef632b2eaa"
+        },
+        {
+            "id": "0e20cf72-2bcc-411c-8d5a-bf695c540ca6",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 8,
+            "m_owner": "87ecf315-a424-4b41-842e-41ef632b2eaa"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [
-        {
-            "id": "b3cecb04-444b-4d9c-8cf3-386227c6f8ff",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "58bcee19-c757-4952-9d84-3bdb0eab98bd",
-            "propertyId": "d1fe8875-ff65-4059-8d0f-8e681095f407",
-            "value": "spr_IdleSideView"
-        }
+        
     ],
     "parentObjectId": "58bcee19-c757-4952-9d84-3bdb0eab98bd",
     "persistent": false,
@@ -33,21 +75,21 @@
     "physicsStartAwake": true,
     "properties": [
         {
-            "id": "46fea437-8942-4e6d-8e4e-284b634bdaa9",
+            "id": "d81c734a-7ef0-4175-ad2d-487ece91449e",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
             "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
+            "rangeEnabled": true,
+            "rangeMax": 7,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "spr_HidePenal",
-            "varName": "m_spr_HidePenal",
-            "varType": 5
+            "value": "0",
+            "varName": "m_id_currentViewPort",
+            "varType": 1
         },
         {
-            "id": "eda39210-fbee-44af-8716-b4421caba788",
+            "id": "535ed1cc-c585-4948-b43f-3a48528bf9ae",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -56,12 +98,26 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "spr_ShortcutPenal",
-            "varName": "m_spr_ShortcutPenal",
-            "varType": 5
+            "value": "0",
+            "varName": "m_f_Movement",
+            "varType": 0
+        },
+        {
+            "id": "7a9235df-8702-4ee8-bd39-7406b4717485",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "True",
+            "varName": "m_b_IsActive",
+            "varType": 3
         }
     ],
     "solid": false,
-    "spriteId": "e0a0b2ad-8974-4685-a11c-8d80e5266e7f",
-    "visible": true
+    "spriteId": "00000000-0000-0000-0000-000000000000",
+    "visible": false
 }
