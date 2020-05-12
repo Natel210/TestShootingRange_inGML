@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+if(global.g_objActiveId != -1){ return; }
 // Inherit the parent event
 event_inherited();
 

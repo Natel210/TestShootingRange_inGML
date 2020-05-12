@@ -1,1 +1,0 @@
-depth = LeftSideView_UI.HidePenal;

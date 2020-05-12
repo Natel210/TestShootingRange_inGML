@@ -15,16 +15,6 @@
             "m_owner": "87ecf315-a424-4b41-842e-41ef632b2eaa"
         },
         {
-            "id": "032cc464-0c3f-4070-90d2-d36fb3484458",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "87ecf315-a424-4b41-842e-41ef632b2eaa"
-        },
-        {
             "id": "cd657da6-3d64-41e9-be2b-676cfc705fcf",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -43,23 +33,13 @@
             "enumb": 0,
             "eventtype": 12,
             "m_owner": "87ecf315-a424-4b41-842e-41ef632b2eaa"
-        },
-        {
-            "id": "0e20cf72-2bcc-411c-8d5a-bf695c540ca6",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 8,
-            "m_owner": "87ecf315-a424-4b41-842e-41ef632b2eaa"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [
         
     ],
-    "parentObjectId": "58bcee19-c757-4952-9d84-3bdb0eab98bd",
+    "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -115,6 +95,20 @@
             "value": "True",
             "varName": "m_b_IsActive",
             "varType": 3
+        },
+        {
+            "id": "e1d2ced6-e85e-446e-8c4f-c86c79770d0e",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "\"\"",
+            "varName": "m_str_InISection",
+            "varType": 2
         }
     ],
     "solid": false,

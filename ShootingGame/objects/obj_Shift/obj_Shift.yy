@@ -33,7 +33,7 @@
             "mvc": "1.0",
             "objectId": "58bcee19-c757-4952-9d84-3bdb0eab98bd",
             "propertyId": "d1fe8875-ff65-4059-8d0f-8e681095f407",
-            "value": "spr_Shift_Idle"
+            "value": "spr_Base_Idle"
         },
         {
             "id": "d5568862-682f-489b-83ab-3e7818c1055a",
@@ -41,7 +41,7 @@
             "mvc": "1.0",
             "objectId": "ec8594cd-bc78-4c3c-9aee-69ef0ccb6a4f",
             "propertyId": "b4388482-33a0-464b-ad24-e8882ed1b6d6",
-            "value": "spr_Shift_Push"
+            "value": "spr_Base_Push"
         }
     ],
     "parentObjectId": "ec8594cd-bc78-4c3c-9aee-69ef0ccb6a4f",
@@ -66,7 +66,7 @@
             "listItems": null,
             "multiselect": false,
             "rangeEnabled": false,
-            "rangeMax": 10,
+            "rangeMax": 7,
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "-1",
@@ -103,6 +103,6 @@
         }
     ],
     "solid": false,
-    "spriteId": "42fbc446-ad59-41ce-b95f-648e709e70a9",
+    "spriteId": "a398d695-7061-426e-8292-76f0e9030d1a",
     "visible": true
 }

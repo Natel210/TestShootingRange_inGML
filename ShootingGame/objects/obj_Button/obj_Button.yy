@@ -33,6 +33,16 @@
             "enumb": 0,
             "eventtype": 8,
             "m_owner": "ec8594cd-bc78-4c3c-9aee-69ef0ccb6a4f"
+        },
+        {
+            "id": "b1495fc8-5489-4bbe-924f-570698976fbb",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "ec8594cd-bc78-4c3c-9aee-69ef0ccb6a4f"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -46,7 +56,7 @@
             "value": "spr_IdleButton"
         }
     ],
-    "parentObjectId": "58bcee19-c757-4952-9d84-3bdb0eab98bd",
+    "parentObjectId": "d6ee1133-a0e2-4da3-a5e6-4e64b564989b",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -70,27 +80,13 @@
             "rangeEnabled": false,
             "rangeMax": 10,
             "rangeMin": 0,
-            "resourceFilter": 1023,
+            "resourceFilter": 2,
             "value": "spr_PushButton",
             "varName": "m_spr_Push",
             "varType": 5
-        },
-        {
-            "id": "b8449a77-4d87-4d6e-bdb8-c5fb716e982c",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "m_bPush",
-            "varType": 3
         }
     ],
     "solid": false,
-    "spriteId": "42fbc446-ad59-41ce-b95f-648e709e70a9",
+    "spriteId": "a398d695-7061-426e-8292-76f0e9030d1a",
     "visible": true
 }
