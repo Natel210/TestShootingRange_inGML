@@ -84,6 +84,20 @@
             "value": "spr_PushButton",
             "varName": "m_spr_Push",
             "varType": 5
+        },
+        {
+            "id": "5b1f92ad-6be1-4cca-9df9-0a7a8c97f70c",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 16,
+            "value": "-1",
+            "varName": "m_scr_activation",
+            "varType": 5
         }
     ],
     "solid": false,

@@ -18,7 +18,15 @@ if (mouse_check_button_pressed(mb_left))
 {
 	//완전 외부로 누를 때 
 	if(false == point_in_rectangle(mouse_x, mouse_y, x, y, x + sprite_width, y + sprite_height))
-	{ m_b_Active = false; }
+	{ 
+		m_b_Active = false; 
+		keyboard_string = "";
+		global.g_objActiveId = -1;
+		if(m_scr_activation != -1 && script_exists(m_scr_activation))
+		{
+			script_execute(m_scr_activation);
+		}
+	}
 }
 #endregion
 #region 활성화 시
@@ -70,10 +78,5 @@ if(m_b_Active)
 #endregion
 	
 	m_str_Text = keyboard_string;
-}
-else
-{
-	keyboard_string = "";
-	global.g_objActiveId = -1;
 }
 #endregion

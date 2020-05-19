@@ -7,3 +7,5 @@ with (m_id_SideView)
 {
 	m_b_IsCheckActiveChange = true;
 }
+// Inherit the parent event
+event_inherited();

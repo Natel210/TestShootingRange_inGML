@@ -22,6 +22,19 @@ if(true == m_b_IsCheckActiveChange)
 	m_b_IsCheckActiveChange  = false;
 }
 
+event_user(10);
+
+
+
+
+
+
+
+
+
+
+
+//
 // Inherit the parent event
 event_inherited();
 

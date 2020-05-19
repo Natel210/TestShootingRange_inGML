@@ -31,6 +31,7 @@ ini_close();
 ini_open(working_directory + temp_SideViewUIDir);
 for (var i = 0; i < ds_list_size(temp_UIlist); ++i) 
 {
+#region 기본 공통 항목
 	var temptpye = ini_read_string(temp_UIlist[| i],"Type","");
 	var tempposx = ini_read_real(temp_UIlist[| i],"PosX",0);
 	var tempposy = ini_read_real(temp_UIlist[| i],"PosY",0);
@@ -53,24 +54,36 @@ for (var i = 0; i < ds_list_size(temp_UIlist); ++i)
 		if("true" == temp_b_OutLine)		{with (temp_instance) { m_b_OutLine = true;}}
 		else if("false" == temp_b_OutLine)		{with (temp_instance) { m_b_OutLine = false;}}
 	}
+#endregion
 	
-	
-	
+#region 글이 있는 항목 
 	if(ini_key_exists(temp_UIlist[| i],"str_Text"))
 	{
 		var temp_str_Text = ini_read_string(temp_UIlist[| i],"str_Text","");
 		if(instance_exists(temp_instance) && -1 != temp_str_Text)
 		{ with (temp_instance) { m_str_Text = temp_str_Text;} }
 	}
+#endregion
 	
-
+#region 누르기 버튼이 있는 항목 
 	if(ini_key_exists(temp_UIlist[| i],"spr_Push"))
 	{
 		var temp_spr_Push = asset_get_index(ini_read_string(temp_UIlist[| i],"spr_Push",""));
 		if(instance_exists(temp_instance) && -1 != temp_spr_Push)
 		{ with (temp_instance) { m_spr_Push = temp_spr_Push;} }
 	}
+#endregion
 	
+#region TextBox에서 만 사용
+	if(ini_key_exists(temp_UIlist[| i],"b_OnlyNum"))
+	{
+		var temp_b_OnlyNum = ini_read_string(temp_UIlist[| i],"b_OnlyNum","");
+		if("true" == temp_b_OnlyNum)		{with (temp_instance) { m_b_OnlyNum = true;}}
+		else if("false" == temp_b_OnlyNum)		{with (temp_instance) { m_b_OnlyNum = false;}}
+	}
+#endregion
+	
+#region 활성 비활성이 존재
 	if(ini_key_exists(temp_UIlist[| i],"spr_Active"))
 	{
 		var temp_spr_Active = asset_get_index(ini_read_string(temp_UIlist[| i],"spr_Active",""));
@@ -78,13 +91,12 @@ for (var i = 0; i < ds_list_size(temp_UIlist); ++i)
 		{ with (temp_instance) { m_spr_Active = temp_spr_Active;} }
 	}
 	
-	if(ini_key_exists(temp_UIlist[| i],"b_OnlyNum"))
+	if(ini_key_exists(temp_UIlist[| i],"scr_activation"))
 	{
-		var temp_b_OnlyNum = ini_read_string(temp_UIlist[| i],"b_OnlyNum","");
-		if("true" == temp_b_OnlyNum)		{with (temp_instance) { m_b_OnlyNum = true;}}
-		else if("false" == temp_b_OnlyNum)		{with (temp_instance) { m_b_OnlyNum = false;}}
+		var temp_scr_activation = asset_get_index(ini_read_string(temp_UIlist[| i],"scr_activation",""));
+		if(instance_exists(temp_instance) && -1 != temp_scr_activation )
+		{ with (temp_instance) { m_scr_activation = temp_scr_activation;} }
 	}
-	
 	
 	
 	if(ini_key_exists(temp_UIlist[| i],"strActiveText"))
@@ -99,20 +111,15 @@ for (var i = 0; i < ds_list_size(temp_UIlist); ++i)
 		var temp_strUnActiveText = ini_read_string(temp_UIlist[| i],"strUnActiveText","");
 		if(instance_exists(temp_instance) && -1 != temp_strUnActiveText)
 		{ with (temp_instance) { m_strUnActiveText = temp_strUnActiveText;} }
-	}
-	
+	}	
+#endregion
 
-	
+#region Shift 전용
 	if("Shift" == temptpye)
 	{
 		with (temp_instance) { m_id_SideView = myid;}
 	}
-	
-	
-	
-	
-	
-	
+#endregion
 	
 	ds_map_add(m_map_ChildUI, temp_UIlist[| i], temp_instance);
 }

@@ -126,6 +126,20 @@
             "value": "",
             "varName": "m_strUnActiveText",
             "varType": 2
+        },
+        {
+            "id": "2359ee85-2862-48f6-9841-b6c55b240953",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 16,
+            "value": "-1",
+            "varName": "m_scr_activation",
+            "varType": 5
         }
     ],
     "solid": false,

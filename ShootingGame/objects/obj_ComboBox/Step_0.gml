@@ -22,7 +22,14 @@ if (mouse_check_button_pressed(mb_left))
 {
 	//완전 외부로 누를 때 
 	if(false == point_in_rectangle(mouse_x, mouse_y, x, y, x + sprite_width, y + (sprite_height * (m_i_MaxShowItem +1))))
-	{ m_b_Active = false; }
+	{ 
+		m_b_Active = false; 
+		global.g_objActiveId = -1;
+		//if(m_scr_activation != -1 && script_exists(m_scr_activation))
+		//{
+		//	script_execute(m_scr_activation);
+		//}
+	}
 }
 if(mouse_check_button_released(mb_left))
 {
@@ -31,6 +38,11 @@ if(mouse_check_button_released(mb_left))
 	{
 		m_i_SelectedItem = m_i_MouseSelectItem + m_i_TopItem;
 		m_b_Active = false;
+		global.g_objActiveId = -1;
+		if(m_scr_activation != -1 && script_exists(m_scr_activation))
+		{
+			script_execute(m_scr_activation);
+		}
 	}
 }
 
@@ -38,11 +50,6 @@ if(mouse_check_button_released(mb_left))
 if(-1 != m_i_SelectedItem)
 {
 	m_str_Text = m_ItemArray[| m_i_SelectedItem];
-}
-
-if(!m_b_Active) 
-{
-	global.g_objActiveId = -1;
 }
 
 

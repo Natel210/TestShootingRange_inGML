@@ -1,6 +1,6 @@
 
 {
-    "name": "room4",
+    "name": "GameData",
     "id": "59ea0e86-5284-4c90-b294-98574dbd7fcd",
     "creationCodeFile": "RoomCreationCode.gml",
     "inheritCode": false,
@@ -11,67 +11,7 @@
     ],
     "IsDnD": false,
     "layers": [
-        {
-            "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
-            "name": "Instances",
-            "id": "76ace0c0-2b06-437e-b018-cbcc5b11f94a",
-            "depth": 0,
-            "grid_x": 32,
-            "grid_y": 32,
-            "hierarchyFrozen": false,
-            "hierarchyVisible": true,
-            "inheritLayerDepth": false,
-            "inheritLayerSettings": false,
-            "inheritSubLayers": false,
-            "inheritVisibility": false,
-            "instances": [
 
-            ],
-            "layers": [
-
-            ],
-            "m_parentID": "00000000-0000-0000-0000-000000000000",
-            "m_serialiseFrozen": false,
-            "modelName": "GMRInstanceLayer",
-            "mvc": "1.0",
-            "userdefined_depth": false,
-            "visible": true
-        },
-        {
-            "__type": "GMRBackgroundLayer_Model:#YoYoStudio.MVCFormat",
-            "name": "Background",
-            "id": "507ad01e-5123-4949-ac10-0e0bf8b27496",
-            "animationFPS": 15,
-            "animationSpeedType": "0",
-            "colour": { "Value": 4278190080 },
-            "depth": 100,
-            "grid_x": 32,
-            "grid_y": 32,
-            "hierarchyFrozen": false,
-            "hierarchyVisible": true,
-            "hspeed": 0,
-            "htiled": false,
-            "inheritLayerDepth": false,
-            "inheritLayerSettings": false,
-            "inheritSubLayers": false,
-            "inheritVisibility": false,
-            "layers": [
-
-            ],
-            "m_parentID": "00000000-0000-0000-0000-000000000000",
-            "m_serialiseFrozen": false,
-            "modelName": "GMRBackgroundLayer",
-            "mvc": "1.0",
-            "spriteId": "00000000-0000-0000-0000-000000000000",
-            "stretch": false,
-            "userdefined_animFPS": false,
-            "userdefined_depth": false,
-            "visible": true,
-            "vspeed": 0,
-            "vtiled": false,
-            "x": 0,
-            "y": 0
-        }
     ],
     "modelName": "GMRoom",
     "parentId": "00000000-0000-0000-0000-000000000000",
